@@ -3,7 +3,7 @@
 [![Paper](https://img.shields.io/badge/ACL%202025-Findings-blue)](https://aclanthology.org/2025.findings-acl.258.pdf)
 [![Codebase](https://img.shields.io/badge/Based%20on-FasterVLM-green)](https://github.com/Theia-4869/FasterVLM)
 
-This repository contains the implementation for the ACL 2025 Findings paper "ADAV: Adaptive Attention with Vision Tokens for Efficient Vision-Language Models". The code extends the [FasterVLM](https://github.com/Theia-4869/FasterVLM) framework with our novel adaptive token selection method.
+This repository contains the implementation for the ACL 2025 Findings paper "AdaV: Adaptive Attention with Vision Tokens for Efficient Vision-Language Models". The code extends the [FasterVLM](https://github.com/Theia-4869/FasterVLM) framework with our novel adaptive token selection method.
 
 ## 🔧 Setup Instructions
 
@@ -54,8 +54,8 @@ CUDA_VISIBLE_DEVICES=0 bash scripts/v1_6/eval/textvqa.sh 58
 
 For LLaVA-Next 34B, utilize the scripts from `scripts/v1_6_34B`, since LLaVA-Next-34B utilize Yi-34B LLM, from a different LLM series.
 ```bash
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 bash scripts/v1_6_34B/eval/vqav2.sh 144
-CUDA_VISIBLE_DEVICES=0 bash scripts/v1_6_34B/eval/textvqa.sh 58
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 bash scripts/v1_6-34B/eval/vqav2.sh 144
+CUDA_VISIBLE_DEVICES=0 bash scripts/v1_6-34B/eval/textvqa.sh 58
 ```
 
 ### 📊 Expected Performance
